@@ -4,7 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 
 class responsiv extends StatefulWidget {
   final my_phone_screan;
-  
+  final my_web_screen;
   const responsiv({super.key});
 
   @override
