@@ -1,6 +1,7 @@
 
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter/widgets.dart';
 
 class responsiv extends StatefulWidget {
   final my_phone_screan;
@@ -14,6 +15,16 @@ class responsiv extends StatefulWidget {
 class _responsivState extends State<responsiv> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return LayoutBuilder(builder: (buildContext, boxConstraints){
+       if (boxConstraints.maxWidth > 600) {
+
+return widget.my_web_screen;
+
+       }
+    else {return widget.my_phone_screan;}
+
+    }
+
+    );
   }
 }
