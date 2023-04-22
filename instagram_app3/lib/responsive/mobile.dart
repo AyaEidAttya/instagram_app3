@@ -4,7 +4,11 @@ import 'package:flutter/src/animation/animation_controller.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/src/widgets/ticker_provider.dart';
+import 'package:instagram_app3/screenes/addpost.dart';
+import 'package:instagram_app3/screenes/profile.dart';
+import 'package:instagram_app3/screenes/search.dart';
 
+import '../screenes/home.dart';
 import '../shaird/colors.dart';
 
 class mobilescreen extends StatefulWidget {
@@ -56,9 +60,18 @@ class _mobilescreenState extends State<mobilescreen> {
                 ),
                 label: ""),
           ]),
-    body: PageView(),
-    
-    
+      body: PageView(
+        onPageChanged: (index) {},
+        physics: NeverScrollableScrollPhysics(),
+        //controller: _pageController,
+        children: [
+       Home(),
+       Profil(),
+       Search(),
+       Addpost(),
+
+        ],
+      ),
     );
   }
 }
