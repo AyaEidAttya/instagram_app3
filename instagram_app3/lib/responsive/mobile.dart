@@ -28,9 +28,9 @@ class _mobilescreenState extends State<mobilescreen> {
         items: [
         BottomNavigationBarItem(icon: Icon(Icons.home , color: primaryColor,), label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.search,color: secondaryColor,), label: ""),
-       BottomNavigationBarItem(icon: Icon(Icons.add_circle , color: primaryColor,), label: ""),
-       BottomNavigationBarItem(icon: Icon(Icons.favorite, color: primaryColor,), label: ""),
-       BottomNavigationBarItem(icon: Icon(Icons.person, color: primaryColor,), label: ""),
+       BottomNavigationBarItem(icon: Icon(Icons.add_circle , color:secondaryColor,), label: ""),
+       BottomNavigationBarItem(icon: Icon(Icons.favorite, color: secondaryColor,), label: ""),
+       BottomNavigationBarItem(icon: Icon(Icons.person, color: secondaryColor,), label: ""),
 
       ]),
     );
