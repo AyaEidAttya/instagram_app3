@@ -5,6 +5,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter/src/widgets/ticker_provider.dart';
 
+import '../shaird/colors.dart';
+
 class mobilescreen extends StatefulWidget {
   const mobilescreen({super.key});
 
@@ -19,7 +21,13 @@ class _mobilescreenState extends State<mobilescreen> {
       appBar: AppBar(
         title: Text("mobile screen"),
       ),
-      bottomNavigationBar: CupertinoTabBar(items: [
+      bottomNavigationBar: CupertinoTabBar(
+        backgroundColor: mobileBackgroundColor,
+        
+        
+        
+        
+        items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
       ]),
