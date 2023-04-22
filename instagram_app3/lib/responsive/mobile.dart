@@ -29,7 +29,7 @@ class _mobilescreenState extends State<mobilescreen> {
         
         items: [
         BottomNavigationBarItem(icon: Icon(Icons.home , color: primaryColor,), label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.search,color: secondaryColor,), label: ""),
       ]),
     );
   }
