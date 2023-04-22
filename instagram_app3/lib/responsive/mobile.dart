@@ -24,7 +24,7 @@ class _mobilescreenState extends State<mobilescreen> {
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {},
-          items: [
+          items: const [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
@@ -56,6 +56,9 @@ class _mobilescreenState extends State<mobilescreen> {
                 ),
                 label: ""),
           ]),
+    body: PageView(),
+    
+    
     );
   }
 }
