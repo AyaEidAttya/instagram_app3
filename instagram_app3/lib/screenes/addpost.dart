@@ -10,6 +10,13 @@ class Addpost extends StatefulWidget {
 class _AddpostState extends State<Addpost> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Add_post"),
+      ),
+
+
+
+    );
   }
 }
