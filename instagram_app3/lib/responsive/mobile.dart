@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/src/animation/animation_controller.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -16,12 +15,13 @@ class _mobilescreenState extends State<mobilescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-appBar: AppBar(
-  title: Text("mobile screen"),
-),
-bottomNavigationBar: BottomNavigationBar(items: []),
+      appBar: AppBar(
+        title: Text("mobile screen"),
+      ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+      ]),
     );
-  
-    
   }
 }
