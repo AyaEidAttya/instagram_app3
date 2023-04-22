@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/animation/animation_controller.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -18,7 +19,7 @@ class _mobilescreenState extends State<mobilescreen> {
       appBar: AppBar(
         title: Text("mobile screen"),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
+      bottomNavigationBar: CupertinoTabBar(items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
       ]),
