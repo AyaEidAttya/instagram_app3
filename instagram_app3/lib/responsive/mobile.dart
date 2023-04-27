@@ -27,8 +27,11 @@ class _mobilescreenState extends State<mobilescreen> {
         title: Text("mobile screen"),
       ),
       bottomNavigationBar: CupertinoTabBar(
+
           backgroundColor: mobileBackgroundColor,
-          onTap: (index) {},
+          onTap: (index) {
+             _pageController.jumpToPage(index);
+          },
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(
