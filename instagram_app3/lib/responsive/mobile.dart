@@ -70,9 +70,12 @@ class _mobilescreenState extends State<mobilescreen> {
         controller: _pageController,
         children: const [
        Home(),
-       Profil(),
        Search(),
+       
        Addpost(),
+       Center(child: Text("love"),),
+       Profil(),
+       
 
         ],
       ),
