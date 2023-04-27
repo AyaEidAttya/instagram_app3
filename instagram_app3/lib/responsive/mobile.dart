@@ -24,7 +24,7 @@ class _mobilescreenState extends State<mobilescreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("mobile screen"),
+       
       ),
       bottomNavigationBar: CupertinoTabBar(
 
