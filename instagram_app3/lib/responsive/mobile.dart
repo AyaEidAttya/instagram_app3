@@ -20,7 +20,7 @@ class mobilescreen extends StatefulWidget {
 
 class _mobilescreenState extends State<mobilescreen> {
   final PageController _pageController = PageController();
- double curnt=0;
+ late double curnt;
   @override
 void dispose() {
    _pageController.dispose();
