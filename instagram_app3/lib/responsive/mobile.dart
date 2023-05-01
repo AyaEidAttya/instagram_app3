@@ -52,25 +52,25 @@ void dispose() {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.search,
-                  color: curnt == 1s ? primaryColor:secondaryColor,
-                ),
-                label: ""),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.add_circle,
                   color: curnt == 1 ? primaryColor:secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
+                  Icons.add_circle,
+                  color: curnt == 2 ? primaryColor:secondaryColor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
                   Icons.favorite,
-                  color:curnt == 1? primaryColor:secondaryColor,
+                  color:curnt == 3? primaryColor:secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person,
-                  color: curnt == 0 ? primaryColor:secondaryColor,
+                  color: curnt == 4 ? primaryColor:secondaryColor,
                 ),
                 label: ""),
           ]),
