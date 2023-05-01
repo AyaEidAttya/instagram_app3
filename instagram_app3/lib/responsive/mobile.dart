@@ -38,12 +38,15 @@ void dispose() {
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
              _pageController.jumpToPage(index);
+             setState(() {
+               curnt=index as double;
+             });
           },
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color:primaryColor,
+                  color: curnt == 0 ? secondaryColor: primaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
