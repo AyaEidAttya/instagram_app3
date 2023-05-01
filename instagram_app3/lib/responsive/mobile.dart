@@ -43,7 +43,7 @@ void dispose() {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color:,
+                  color:primaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
