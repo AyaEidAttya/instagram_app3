@@ -28,6 +28,7 @@ class _HomeState extends State<Home> {
             children: [
               CircleAvatar(
                 radius: 26,
+                backgroundImage: NetworkImage("https://1000logos.net/wp-content/uploads/2017/02/New-Instagram-logo.jpg"),
               )
             ],
             
