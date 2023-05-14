@@ -30,6 +30,7 @@ void dispose() {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
        title: SvgPicture.asset("assats/img/imgres.svg",color: primaryColor,),
