@@ -91,13 +91,13 @@ class _HomeState extends State<Home> {
           Text("sidi abou said",
           textAlign: TextAlign.start,
           style: TextStyle(
-            fontSize: 15,color: Colors.purple,
+            fontSize: 15,color: Color.fromARGB(255, 156, 39, 176),
           ),
           )
         ],
        )
-       
-       
+       ,
+       TextButton(onPressed: (){}, child: Text("view all comments!!"))
         ],
       ),
     );
