@@ -20,7 +20,7 @@ class mobilescreen extends StatefulWidget {
 
 class _mobilescreenState extends State<mobilescreen> {
   final PageController _pageController = PageController();
- late double curnt;
+ double curnt=0;
   @override
 void dispose() {
    _pageController.dispose();
@@ -38,39 +38,36 @@ void dispose() {
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
              _pageController.jumpToPage(index);
-             setState(() {
-               curnt=index as double;
-             });
           },
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color: curnt == 0 ? secondaryColor: primaryColor,
+                  color:  primaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.search,
-                  color: curnt == 1 ? primaryColor:secondaryColor,
+                  color: secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.add_circle,
-                  color: curnt == 2 ? primaryColor:secondaryColor,
+                  color: secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.favorite,
-                  color:curnt == 3? primaryColor:secondaryColor,
+                  color: secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person,
-                  color: curnt == 4 ? primaryColor:secondaryColor,
+                  color: secondaryColor,
                 ),
                 label: ""),
           ]),
