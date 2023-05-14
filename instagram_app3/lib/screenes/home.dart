@@ -50,11 +50,20 @@ class _HomeState extends State<Home> {
           
                 
                 IconButton(onPressed: (){}, icon: Icon(Icons.more_vert)),
+               
+
+
               ],
               
             ),
           ),
+          Image.network("https://www.bing.com/th?id=OIP.fN9gx82LKxSZVpTc18meBgHaEo&w=149&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2",
+          fit: BoxFit.cover,),
         ],
+     
+     
+     
+     
       ),
     );
   }
