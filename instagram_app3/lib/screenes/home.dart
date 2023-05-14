@@ -62,22 +62,35 @@ class _HomeState extends State<Home> {
           height: MediaQuery.of(context).size.height*0.35,
           width: double.infinity,),
 
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+          Padding(
+            padding: const EdgeInsets.all(13.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+          
+             Row(
+              children: [
+                 IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.comment_outlined)),
+              IconButton(onPressed: (){}, icon: Icon(Icons.send)),
+          
+          
+              ],
+             ),
+              IconButton(onPressed: (){}, icon: Icon(Icons.bookmark_outline)),
+              
+            ],),
+          ),
+       Container(
+width: double.infinity,
 
-           Row(
-            children: [
-               IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),
-            IconButton(onPressed: (){}, icon: Icon(Icons.comment_outlined)),
-            IconButton(onPressed: (){}, icon: Icon(Icons.send)),
 
+        child:
 
-            ],
-           ),
-            IconButton(onPressed: (){}, icon: Icon(Icons.bookmark_outline)),
-            
-          ],),
+      
+        Text("10 likes",style:TextStyle(fontSize: 10) ,))
+       
+       
         ],
      
      
