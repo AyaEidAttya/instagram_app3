@@ -28,8 +28,12 @@ class _HomeState extends State<Home> {
       body: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              CircleAvatar(
+              Row(
+                
+                children: [
+                  CircleAvatar(
                 radius: 26,
                 backgroundImage: NetworkImage(
                     "https://th.bing.com/th/id/OIP.h8_4I67bt6pTA-y_h2hzHwAAAA?pid=ImgDet&rs=1"),
@@ -38,6 +42,11 @@ class _HomeState extends State<Home> {
                 width: 17,
               ),
               Text("aya_eid",style: TextStyle(fontSize: 15),),
+
+                ],
+              ),
+
+              
               IconButton(onPressed: (){}, icon: Icon(Icons.more_vert)),
             ],
             
