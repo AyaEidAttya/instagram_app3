@@ -33,69 +33,59 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Row(
-                  
                   children: [
                     CircleAvatar(
-                  radius: 26,
-                  backgroundImage: NetworkImage(
-                      "https://th.bing.com/th/id/OIP.h8_4I67bt6pTA-y_h2hzHwAAAA?pid=ImgDet&rs=1"),
-                ),
-                SizedBox(
-                  width: 17,
-                ),
-                Text("aya_eid",style: TextStyle(fontSize: 15),),
-          
+                      radius: 26,
+                      backgroundImage: NetworkImage(
+                          "https://th.bing.com/th/id/OIP.h8_4I67bt6pTA-y_h2hzHwAAAA?pid=ImgDet&rs=1"),
+                    ),
+                    SizedBox(
+                      width: 17,
+                    ),
+                    Text(
+                      "aya_eid",
+                      style: TextStyle(fontSize: 15),
+                    ),
                   ],
                 ),
-          
-                
-                IconButton(onPressed: (){}, icon: Icon(Icons.more_vert)),
-               
-
-
+                IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
               ],
-              
             ),
           ),
-          Image.network("https://www.bing.com/th?id=OIP.fN9gx82LKxSZVpTc18meBgHaEo&w=149&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2",
-          fit: BoxFit.cover,
-          height: MediaQuery.of(context).size.height*0.35,
-          width: double.infinity,),
-
+          Image.network(
+            "https://www.bing.com/th?id=OIP.fN9gx82LKxSZVpTc18meBgHaEo&w=149&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.9&pid=3.1&rm=2",
+            fit: BoxFit.cover,
+            height: MediaQuery.of(context).size.height * 0.35,
+            width: double.infinity,
+          ),
           Padding(
             padding: const EdgeInsets.all(13.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-          
-             Row(
-              children: [
-                 IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),
-              IconButton(onPressed: (){}, icon: Icon(Icons.comment_outlined)),
-              IconButton(onPressed: (){}, icon: Icon(Icons.send)),
-          
-          
+                Row(
+                  children: [
+                    IconButton(
+                        onPressed: () {}, icon: Icon(Icons.favorite_border)),
+                    IconButton(
+                        onPressed: () {}, icon: Icon(Icons.comment_outlined)),
+                    IconButton(onPressed: () {}, icon: Icon(Icons.send)),
+                  ],
+                ),
+                IconButton(
+                    onPressed: () {}, icon: Icon(Icons.bookmark_outline)),
               ],
-             ),
-              IconButton(onPressed: (){}, icon: Icon(Icons.bookmark_outline)),
-              
-            ],),
+            ),
           ),
-       Container(
-width: double.infinity,
-
-
-        child:
-
-      
-        Text("10 likes",style:TextStyle(fontSize: 10) ,))
-       
-       
+          Container(
+            margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+              width: double.infinity,
+              child: Text(
+                "10 likes",
+              
+                style: TextStyle(fontSize: 10),
+              ))
         ],
-     
-     
-     
-     
       ),
     );
   }
