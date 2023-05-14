@@ -32,6 +32,11 @@ void dispose() {
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
+        actions: [
+          IconButton(onPressed:(){}, icon: Icon(Icons.message_outlined)),
+           IconButton(onPressed:(){}, icon: Icon(Icons.logout)),
+
+        ],
         backgroundColor: mobileBackgroundColor,
        // ignore: deprecated_member_use
        title: SvgPicture.asset("assats/img/imgres.svg",color:primaryColor,height: 32,),
