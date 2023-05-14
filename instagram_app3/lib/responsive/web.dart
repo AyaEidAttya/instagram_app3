@@ -2,11 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:instagram_app/screens/add_post.dart';
-import 'package:instagram_app/screens/home.dart';
-import 'package:instagram_app/screens/profile.dart';
-import 'package:instagram_app/screens/search.dart';
-import 'package:instagram_app/shared/colors.dart';
+import 'package:instagram_app3/screenes/addpost.dart';
+import 'package:instagram_app3/screenes/home.dart';
+import 'package:instagram_app3/screenes/search.dart';
+
 
 import '../shaird/colors.dart';
 
@@ -74,10 +73,11 @@ class _WebScerrenState extends State<WebScerren> {
         // controller: _pageController,
         children: [
           Home(),
+          Addpost(),
           Search(),
-          AddPost(),
+
           Center(child: Text("Love u ♥")),
-          Profile(),
+          
         ],
       ),
     );
