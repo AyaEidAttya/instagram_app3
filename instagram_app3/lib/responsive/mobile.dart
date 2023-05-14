@@ -31,16 +31,7 @@ void dispose() {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
-      appBar: AppBar(
-        actions: [
-          IconButton(onPressed:(){}, icon: Icon(Icons.message_outlined)),
-           IconButton(onPressed:(){}, icon: Icon(Icons.logout)),
-
-        ],
-        backgroundColor: mobileBackgroundColor,
-       // ignore: deprecated_member_use
-       title: Text("instgram" ,style: TextStyle(fontWeight: FontWeight.w100),),
-      ),
+      
       bottomNavigationBar: CupertinoTabBar(
 
           backgroundColor: mobileBackgroundColor,

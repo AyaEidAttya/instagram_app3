@@ -16,10 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: responsiv(
-        my_phone_screan: mobilescreen(),
-        my_web_screen: webscreen(),
-      ),
+      home:mobilescreen(),
     );
   }
 }
