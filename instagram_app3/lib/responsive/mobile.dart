@@ -31,6 +31,7 @@ void dispose() {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: mobileBackgroundColor,
        title: SvgPicture.asset("assats/img/imgres.svg",color: primaryColor,),
       ),
       bottomNavigationBar: CupertinoTabBar(
