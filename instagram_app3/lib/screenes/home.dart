@@ -78,13 +78,26 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
-            margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
               width: double.infinity,
               child: Text(
                 "10 likes",
-              
                 style: TextStyle(fontSize: 10),
-              ))
+
+              ),),
+       
+       Row(
+        children: [
+          Text("sidi abou said",
+          textAlign: TextAlign.start,
+          style: TextStyle(
+            fontSize: 15,color: Colors.purple,
+          ),
+          )
+        ],
+       )
+       
+       
         ],
       ),
     );
