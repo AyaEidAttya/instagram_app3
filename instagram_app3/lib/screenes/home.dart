@@ -97,7 +97,9 @@ class _HomeState extends State<Home> {
         ],
        )
        ,
-       TextButton(onPressed: (){}, child: Text("view all comments!!"))
+       Container(
+        width:double.infinity ,
+        child:Text("view all comments!!",textAlign: TextAlign.start,style: TextStyle(fontSize: 16),),),
         ],
       ),
     );
