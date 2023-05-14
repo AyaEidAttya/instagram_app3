@@ -108,6 +108,14 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
+          Container(
+              width: double.infinity,
+              child: Text(
+                "10april 2012",
+                textAlign: TextAlign.start,
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
         ],
       ),
     );
