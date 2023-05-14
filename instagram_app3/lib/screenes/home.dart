@@ -78,28 +78,36 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
-              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+            margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+            width: double.infinity,
+            child: Text(
+              "10 likes",
+              style: TextStyle(fontSize: 10),
+            ),
+          ),
+          Row(
+            children: [
+              Text(
+                "sidi abou said",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Color.fromARGB(255, 156, 39, 176),
+                ),
+              )
+            ],
+          ),
+          GestureDetector(
+            onTap: (){},
+            child: Container(
               width: double.infinity,
               child: Text(
-                "10 likes",
-                style: TextStyle(fontSize: 10),
-
-              ),),
-       
-       Row(
-        children: [
-          Text("sidi abou said",
-          textAlign: TextAlign.start,
-          style: TextStyle(
-            fontSize: 15,color: Color.fromARGB(255, 156, 39, 176),
+                "view all comments!!",
+                textAlign: TextAlign.start,
+                style: TextStyle(fontSize: 16),
+              ),
+            ),
           ),
-          )
-        ],
-       )
-       ,
-       Container(
-        width:double.infinity ,
-        child:Text("view all comments!!",textAlign: TextAlign.start,style: TextStyle(fontSize: 16),),),
         ],
       ),
     );
