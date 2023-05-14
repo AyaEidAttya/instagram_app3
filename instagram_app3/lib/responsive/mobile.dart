@@ -39,7 +39,7 @@ void dispose() {
         ],
         backgroundColor: mobileBackgroundColor,
        // ignore: deprecated_member_use
-       title: SvgPicture.asset("assats/img/imgres.svg",color:primaryColor,height: 32,),
+      
       ),
       bottomNavigationBar: CupertinoTabBar(
 
