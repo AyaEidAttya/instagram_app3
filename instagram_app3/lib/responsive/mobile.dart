@@ -7,7 +7,7 @@ import 'package:flutter/src/widgets/ticker_provider.dart';
 import 'package:instagram_app3/screenes/addpost.dart';
 import 'package:instagram_app3/screenes/profile.dart';
 import 'package:instagram_app3/screenes/search.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import '../screenes/home.dart';
 import '../shaird/colors.dart';
 
@@ -31,7 +31,7 @@ void dispose() {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-       
+       title: SvgPicture.asset("assats/img/imgres.svg"),
       ),
       bottomNavigationBar: CupertinoTabBar(
 
@@ -78,7 +78,6 @@ void dispose() {
         children: const [
        Home(),
        Search(),
-       
        Addpost(),
        Center(child: Text("love"),),
        Profil(),
