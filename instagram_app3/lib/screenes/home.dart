@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../shaird/colors.dart';
 class Home extends StatefulWidget {
@@ -21,7 +20,21 @@ class _HomeState extends State<Home> {
         ],
         backgroundColor: mobileBackgroundColor,
        // ignore: deprecated_member_use
-       title: SvgPicture.asset("assats/imgimgres.svg"),
+       title: Text("instgram" ,style: TextStyle(fontWeight: FontWeight.w100),),
+      ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              CircleAvatar(
+                
+              )
+            ],
+            
+          ),
+
+
+        ],
       ),
     );
   }
