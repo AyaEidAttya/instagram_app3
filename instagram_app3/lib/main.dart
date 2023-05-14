@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_app3/responsive/mobile.dart';
 import 'package:instagram_app3/responsive/responsive.dart';
-import 'package:instagram_app3/responsive/web.dart';
 
 void main() {
   runApp(const MyApp());
