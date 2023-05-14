@@ -33,7 +33,8 @@ void dispose() {
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
-       title: SvgPicture.asset("assats/img/imgres.svg",),
+       // ignore: deprecated_member_use
+       title: SvgPicture.asset("assats/img/imgres.svg",color:primaryColor,),
       ),
       bottomNavigationBar: CupertinoTabBar(
 
